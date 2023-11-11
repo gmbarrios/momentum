@@ -4,18 +4,54 @@
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="./src/app.module.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Momentum</title>
+    <title>Momentum - Rehabilitación física y rendimiento deportivo</title>
   </head>
   <body>
-    <div id="root"></div>
-    <div class="headerContent">Momentum Fisioterapia</div>
+    
+    <div id="root"></div> <!--Esto realmente va?-->
+    
+    <header>
+      <h1>Momentum Fisioterapia</h1> <!--Sustituir por mi logotipo-->
+      <h2>Reportar</h2>
+      <nav>
+        <a href="#contacto">Contacto</a> <!--Revisar y sustituir-->
+      </nav>
+    </header>
+    
+    <main>
       <section>
+        <article>
+          <p>
+          Descubre el entrenamiento ideal para tu rutina de ejercicios.<br>
+          Selecciona la opción que corresponda con tus necesidades.
+          </p>
+        </article>
         <h1>Training</h1>
         <h1>Rehab</h1>
-        <input type="time">
-        <img src="nonexis.jp" title="No existe" alt="una foto inexistente.">
       </section>
-      <footer>Contactos</footer>
+
+      <div role=""></div> <!--simplemente una prueba a tomar en cuenta-->
+    </main>
+    
+    <footer id="contacto">
+      <h2>Contacto</h2>
+
+      <form method="post" action="">
+        <fieldset>
+          <legend>Información personal</legend>
+          <label>Nombre:
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Marcel Barrios"
+            required
+            >
+          </label>
+        </fieldset>
+        <button>Enviar contacto</button>
+      </form>
+    </footer>
     </div>
   </body>
 </html>
