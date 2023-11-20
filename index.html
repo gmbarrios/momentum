@@ -1,9 +1,9 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8">
     <link rel="stylesheet" href="./src/app.module.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Momentum - Rehabilitación física y rendimiento deportivo</title>
   </head>
   <body>
@@ -11,40 +11,62 @@
     <div id="root"></div> <!--Esto realmente va?-->
     
     <header>
-      <h1>Momentum Fisioterapia</h1> <!--Sustituir por mi logotipo-->
-      <h2>Reportar</h2>
-      <nav>
-        <a href="#contacto">Contacto</a> <!--Revisar y sustituir-->
-      </nav>
+      
+        <a href="#" title="Home" aria-label="home" class="logo">Momentum Logo<!--Sustituir por mi logotipo-->
+        </a>
+        <!--PENDIENTE DE USAR UN SOLO H1. USAR BIEN LAS JERARQUIAS Y TIPOS DE ELEMENTOS-->
+        <h3>
+          <a href="#training-option">Training</a>
+        </h3>
+        <h3>
+          <a href="#rehab-option">Rehab</a>
+        </h3>
+        <h3>
+          <a href="#report-option">Reportar</a>
+        </h3>
+        <h3>
+          <a href="#contact-option">Contacto</a>
+        </h3>
+
     </header>
     
     <main>
       <section>
         <article>
+          <h1></h1>
           <p>
           Descubre el entrenamiento ideal para tu rutina de ejercicios.<br>
           Selecciona la opción que corresponda con tus necesidades.
           </p>
         </article>
-        <h1>Training</h1>
-        <h1>Rehab</h1>
+        <h2 id="training-option">Training</h2>
+        <h2 id="rehab-option">Rehab</h2>
       </section>
 
-      <div role=""></div> <!--simplemente una prueba a tomar en cuenta-->
+      <div></div> <!-- role=""...simplemente una prueba a tomar en cuenta-->
     </main>
     
-    <footer id="contacto">
+    <footer id="contact-option">
       <h2>Contacto</h2>
 
       <form method="post" action="">
         <fieldset>
           <legend>Información personal</legend>
           <label>Nombre:
-          <input
+            <input id="input"
             type="text"
             id="name"
             name="name"
             placeholder="Marcel Barrios"
+            required
+            >
+          </label>
+          <label>Correo:
+            <input id="input"
+            type="email"
+            id="mail"
+            name="mail"
+            placeholder="example@momentum.com"
             required
             >
           </label>
